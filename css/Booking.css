@@ -1,0 +1,97 @@
+/* General Body Styling */
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f5f0;
+    color: #333;
+}
+
+/* Container Styling */
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 2px solid #b29f82;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #b29f82;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Input, Select, and Textarea Styling */
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #b29f82;
+}
+
+.form-container input, 
+.form-container textarea, 
+.form-container select {
+    width: 100%;
+    padding: 12px 0; /* Adjust for underline style */
+    margin-bottom: 15px;
+    border: none; /* Remove box */
+    border-bottom: 1px solid #ccc; /* Add underline */
+    border-radius: 0; /* Remove rounded corners */
+    font-size: 14px;
+    color: #b29f82;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.form-container input:focus, 
+.form-container textarea:focus, 
+.form-container select:focus {
+    border-bottom: 1px solid #b29f82; /* Change underline on focus */
+    box-shadow: none; /* Remove extra glow */
+    outline: none;
+}
+
+.form-container textarea {
+    resize: vertical;
+}
+
+/* Button Styling */
+.form-container button {
+    width: 100%;
+    padding: 14px;
+    background: #b29f82;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.form-container button:hover {
+    background: #9c8c6f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(178, 159, 130, 0.4);
+}
+
+/* Placeholder Styling */
+::placeholder {
+    color: #a59b8d;
+}
+
+/* Form Header Separator */
+.form-header {
+    padding-bottom: 10px; /* Optional */
+}
